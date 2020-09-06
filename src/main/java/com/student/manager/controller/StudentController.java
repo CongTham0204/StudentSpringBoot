@@ -15,12 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 import com.student.manager.dto.StudentDto;
 import com.student.manager.dto.SubjectDto;
 import com.student.manager.service.StudentService;
+import com.student.manager.service.SubjectService;
 
 @RestController
 public class StudentController {
 
 	@Autowired
 	private StudentService studentService;
+	
+	@Autowired
+	private SubjectService subjectService;
 
 	@RequestMapping(value = "/students", method = RequestMethod.POST)
 	@ResponseBody
