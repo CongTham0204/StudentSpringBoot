@@ -23,8 +23,6 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 	
-	@Autowired
-	private SubjectService subjectService;
 
 	@RequestMapping(value = "/students", method = RequestMethod.POST)
 	@ResponseBody
